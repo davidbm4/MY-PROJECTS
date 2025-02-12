@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+</head>
+
+<body>
+    <h1>Registro de usuario</h1>
+    <form>
+        <label for="nombre">Nombre(S):</label>
+        <input
+         type="text"
+          id="nombre"
+           name="nombre"
+            placeholder="Ej: Juan Carlos"
+             required
+        >
+        <br><br>
+        <label for="apellidos">Apellido(S):</label>
+        <input
+         type="text"
+          id="apellidos"
+           name="apellidos"
+            placeholder="Ej: Buritica Marin"
+             required
+        >
+        <br><br>
+        <label for="correoelectronico">Correo Electronico:</label>
+        <input
+         type="email"
+          name="email"
+           id="email"
+            placeholder="ejemplo@correo.com"
+             required
+        >
+        <br><br>
+        <label for="departamentos">Departamento: </label>
+        <select name="departamentos" required>
+            <option value="" disabled selected>Seleccione un departamento</option>
+            <option value="amazonas">Amazonas</option>
+            <option value="antioquia">Antioquia</option>
+            <option value="arauca">Arauca</option>
+            <option value="atlantico">Atlántico</option>
+            <option value="bolivar">Bolívar</option>
+            <option value="boyaca">Boyacá</option>
+            <option value="caldas">Caldas</option>
+            <option value="caqueta">Caquetá</option>
+            <option value="casanare">Casanare</option>
+            <option value="cauca">Cauca</option>
+            <option value="cesar">Cesar</option>
+            <option value="choco">Chocó</option>
+            <option value="cordoba">Córdoba</option>
+            <option value="cundinamarca">Cundinamarca</option>
+            <option value="guainia">Guainía</option>
+            <option value="guaviare">Guaviare</option>
+            <option value="huila">Huila</option>
+            <option value="guajira">La Guajira</option>
+            <option value="magdalena">Magdalena</option>
+            <option value="meta">Meta</option>
+            <option value="narino">Nariño</option>
+            <option value="norte-santander">Norte de Santander</option>
+            <option value="putumayo">Putumayo</option>
+            <option value="quindio">Quindío</option>
+            <option value="risaralda">Risaralda</option>
+            <option value="san-andres">San Andrés y Providencia</option>
+            <option value="santander">Santander</option>
+            <option value="sucre">Sucre</option>
+            <option value="tolima">Tolima</option>
+            <option value="valle">Valle del Cauca</option>
+            <option value="vaupes">Vaupés</option>
+            <option value="vichada">Vichada</option>
+        </select>
+        <br><br>
+        <label for="ciudades">Ciudad: </label>
+        <input
+         type="text"
+          name="ciudades"
+           id="ciudades"
+            placeholder="Ingrese la ciudad"
+             required
+        >
+        <br><br>
+        <label for="fechaNacimiento">Fecha de nacimiento: </label>
+        <input
+         type="date"
+          name="fechaNacimiento"
+           id="fechaNacimiento"
+            required
+             min="1900-01-01"
+              max="2025-02-08"
+        >
+        <br><br>
+        <label for="edad">Edad: </label>
+        <input
+         type="number"
+          name="edad"
+           id="edad"
+            min="0"
+             max="120"
+              required
+        >
+        <br><br>
+        <label for="direccion">Dirección de residencia: </label>
+        <input
+         type="text"
+          name="direccion"
+           id="direccion"
+            placeholder="Ej: Calle 123 # 45-67"
+             required
+        >
+        <br><br>
+        <label for="telefono">Número celular:</label>
+        <input
+         type="tel"
+          id="telefono"
+           name="telefono"
+            required placeholder="Ejemplo: 3001234567"
+             pattern="[3][0-9]{9}"
+               minlength="10"
+                maxlength="10"
+                 title="Ingrese un número de celular válido que empiece con 3 y tenga 10 dígitos"
+        >
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
